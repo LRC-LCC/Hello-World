@@ -11,15 +11,13 @@
 <!-- EBSCOhost Custom Search Box Begins -->
 <script src="http://support.epnet.com/eit/scripts/ebscohostsearch.js" type="text/javascript"></script>
 <style type="text/css">
-	    .ebscohostCustomSearchBox {font-family:Helvetica,Verdana,Arial,sans-serif;width:440px;}
-		.ebscohostCustomSearchBox #disciplineBlock { width:auto; }
-		.ebscohostCustomSearchBox .limiter { float:left;margin:0;padding:0;width:50%; }
+	    .ebscohostCustomSearchBox {font-family:Helvetica,Verdana,Arial,sans-serif;width:600px;}
 		.ebscohostCustomSearchBox #ebscohostsearchtext { width: 244px; }
 		.ebscohostCustomSearchBox #ebscohostsearchtext.edspub { width: 245px; }
 		.ebscohostCustomSearchBox .ebscohostCustomSearchBox .ebscohost-search-button.edspub {
 			border: 1px solid #156619;
 			padding: 5px 10px !important;
-			border-radius: 6px;
+			border-radius: 10px;
 			color: #fff;
 			font-weight: bold;
 			background-color: #156619;
@@ -29,22 +27,29 @@
 			font-weight: bold;
 		}
 
+	.auto-style1 {
+	margin-left: 38px;
+}
+.auto-style2 {
+	margin-left: 42px;
+}
+
 	</style>
-	<form class="ebscohostCustomSearchBox" action="" onsubmit="return ebscoHostSearchGo(this);" method="post" style="overflow:hidden;">
-		<input id="ebscohostwindow" name="ebscohostwindow" type="hidden" value="0" />
+	<form class="ebscohostCustomSearchBox" action="" onsubmit="return ebscoHostSearchGo(this);" method="post" style="overflow:hidden; width: 652px;">
+		<input id="ebscohostwindow" name="ebscohostwindow" type="hidden" value="1" />
 		<input id="ebscohosturl" name="ebscohosturl" type="hidden" value="http://search.ebscohost.com/login.aspx?direct=true&scope=site&type=0&site=eds-live&lang=en&authtype=ip,shib&custid=ns206990" />
 		<input id="ebscohostsearchsrc" name="ebscohostsearchsrc" type="hidden" value="db" />
 		<input id="ebscohostsearchmode" name="ebscohostsearchmode" type="hidden" value="+" />
 		<input id="ebscohostkeywords" name="ebscohostkeywords" type="hidden" value="" />
 		<div style="padding-top:5px;">
-		<div style="background-image:url('images/Search+1.png'); background-repeat:no-repeat; height:65px; width:440px; font-size:12pt; color:#353535;">
-			<div style="padding-left:105px;">
+		<div style="background-image:url('images/Search+_green2.png'); background-repeat:no-repeat; height:65px; width:779px; font-size:12pt; color:#353535;">
+			<div style="padding-left:115px;">
 				<div>
-					<input id="ebscohostsearchtext" class="" name="ebscohostsearchtext" type="text" size="23"  style="font-size:14pt;padding-left:5px;margin-left:0px;" />
-					<input type="submit" value="Search" class="ebscohost-search-button " style="font-size:14pt;padding-left:5px;" />
+					<input id="ebscohostsearchtext" class="auto-style1" name="ebscohostsearchtext" type="text" size="28"  style="font-size:16pt;padding-left:5px;width: 383px;" />
+					<input type="submit" value="Search" class="ebscohost-search-button " style="font-size:16pt;padding-left:5px;" />
 					
 					<div id="guidedFieldSelectors">
-						<input class="radio" type="radio" name="searchFieldSelector" id="guidedField_0" value="" checked="checked" />
+						<input class="auto-style2" type="radio" name="searchFieldSelector" id="guidedField_0" value="" checked="checked" />
 						<label class="label" for="guidedField_0"> Keyword</label>
 						<input class="radio" type="radio" name="searchFieldSelector" id="guidedField_1" value="TI" />
 						<label class="label" for="guidedField_1"> Title</label>
